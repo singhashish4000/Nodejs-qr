@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var qrCode = require('qrcode');
-var request = require('request');
+
 
 /* GET home page. */
 router.get('/', async  function(req, res) {
