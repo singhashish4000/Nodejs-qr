@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title.length %></p>
+
+
+    <form action="/createStaicQr" method="POST">
+      <label for="fname">Enter Url</label><br>
+      <input type="text" id="url" name="url" value="url"><br>
+      <input type="submit" value="Create Static QR">
+    </form><br>
+
+    <form action="/createDynamicQr" method="POST">
+      <label for="fname">Enter Url</label><br>
+      <input type="text" id="url" name="url" value="url"><br>
+      <input type="submit" value="Create Dynamic QR">
+    </form>
+
+  </body>
+</html>
